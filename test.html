@@ -1,83 +1,210 @@
-<html lang="vi"><head>
-        <meta charset="UTF-8">
-        <title>Giới thiệu đội ngũ bác sĩ nha khoa</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body class="vsc-initialized">
-        <h1>Đội Ngũ Bác Sĩ Nha Khoa</h1>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Đội Ngũ Bác Sĩ Nha Khoa - Trung Tâm Nha Khoa Uy Tín</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        <div class="menu">
-            <a href="#">Trang chủ</a> | <a href="#">Giới thiệu</a> |
-            <a href="#">Bác sĩ</a> |
-            <a href="#">Liên hệ</a>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #007bff;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #007bff;
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .intro-text {
+      font-size: 1.15rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: #555;
+    }
+
+    .doctors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .doctor-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .doctor-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    }
+
+    .doctor-card h3 {
+      font-size: 1.5rem;
+      margin: 15px 0 8px;
+      color: #007bff;
+    }
+
+    .doctor-card .specialty {
+      font-size: 1.05rem;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .reputation {
+      background: #e9f5ff;
+      border-radius: 12px;
+      padding: 40px;
+      margin: 40px auto;
+      max-width: 900px;
+    }
+
+    .reputation ul {
+      list-style: none;
+      font-size: 1.1rem;
+    }
+
+    .reputation li {
+      margin: 18px 0;
+      padding-left: 35px;
+      position: relative;
+    }
+
+    .reputation li::before {
+      content: "✔";
+      color: #28a745;
+      position: absolute;
+      left: 0;
+      font-size: 1.3rem;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.3rem; }
+      h2 { font-size: 1.9rem; }
+      section { padding: 50px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Đội Ngũ Bác Sĩ Nha Khoa</h1>
+      <p>Chuyên môn cao – Kinh nghiệm dày dặn – Tận tâm vì nụ cười khỏe đẹp của bạn</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Giới thiệu</h2>
+      <p class="intro-text">
+        Phòng khám chúng tôi tự hào quy tụ đội ngũ bác sĩ nha khoa hàng đầu, 
+        với nhiều năm kinh nghiệm lâm sàng và luôn đặt sức khỏe, sự hài lòng của bệnh nhân lên hàng đầu.
+      </p>
+
+      <h2>Đội ngũ bác sĩ</h2>
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <h3>Bác sĩ Nguyễn Văn A</h3>
+          <div class="specialty">Chuyên khoa Răng Hàm Mặt</div>
         </div>
 
-        <!-- ẢNH MINH HỌA -->
-        <br>
-        <div class="banner">
-            <img src="https://www.docosan.com/blog/wp-content/uploads/2020/12/BLOG-cua-Haeo-3.jpg" alt="Đội ngũ bác sĩ nha khoa">
+        <div class="doctor-card">
+          <h3>Bác sĩ Trần Thị B</h3>
+          <div class="specialty">Chuyên khoa Chỉnh nha (Niềng răng)</div>
         </div>
 
-        <!-- GIỚI THIỆU -->
-        <div class="section">
-            <h2>Giới thiệu</h2>
-            <p>
-                Phòng khám quy tụ đội ngũ bác sĩ nha khoa có chuyên môn cao,
-                nhiều năm kinh nghiệm và luôn tận tâm với bệnh nhân.
-            </p>
+        <div class="doctor-card">
+          <h3>Bác sĩ Lê Văn C</h3>
+          <div class="specialty">Chuyên khoa Nha khoa trẻ em</div>
         </div>
+      </div>
 
-        <!-- DANH SÁCH BÁC SĨ -->
-        <div class="section">
-            <h2>Đội ngũ bác sĩ</h2>
-            <ol>
-                <li>Bác sĩ Nguyễn Văn A – Răng Hàm Mặt</li>
-                <li>Bác sĩ Trần Thị B – Chỉnh nha</li>
-                <li>Bác sĩ Lê Văn C – Nha khoa trẻ em</li>
-            </ol>
-        </div>
+      <div class="reputation">
+        <h2>Uy tín & Cam kết</h2>
+        <ul>
+          <li>Bác sĩ đều có chứng chỉ hành nghề hợp pháp</li>
+          <li>Trang bị máy móc, công nghệ hiện đại bậc nhất</li>
+          <li>Đã chăm sóc và điều trị thành công cho hơn 10.000 khách hàng</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <!-- UY TÍN -->
-        <div class="section">
-            <h2>Uy tín &amp; cam kết</h2>
-            <ul>
-                <li>Bác sĩ có chứng chỉ hành nghề</li>
-                <li>Thiết bị hiện đại</li>
-                <li>Hơn 10.000 khách hàng tin tưởng</li>
-            </ul>
-        </div>
+  <footer>
+    <div class="container">
+      <p>© 2026 Trung tâm Nha khoa Uy Tín</p>
+      <p>Hotline: 0900 111 222</p>
+    </div>
+  </footer>
 
-        <!-- FOOTER -->
-        <div class="footer">
-            <p>© 2026 Trung tâm Nha khoa uy tín</p>
-            <p>Hotline: 0900 111 222</p>
-        </div>
-                <script>
-  // Chặn menu chuột phải
-  document.addEventListener("contextmenu", (e) => e.preventDefault());
-
-  // Chặn chọn văn bản (không tuyệt đối)
-  document.addEventListener("selectstart", (e) => e.preventDefault());
-
-  // Chặn kéo thả
-  document.addEventListener("dragstart", (e) => e.preventDefault());
-  document.addEventListener("keydown", (e) => {
-    const k = e.key.toLowerCase();
-
-    // F12
-    if (e.key === "F12") e.preventDefault();
-
-    // Ctrl+Shift+I / J / C (Chrome/Edge)
-    if (e.ctrlKey && e.shiftKey && (k === "i" || k === "j" || k === "c"))
-      e.preventDefault();
-
-    // Ctrl+U (view source)
-    if (e.ctrlKey && k === "u") e.preventDefault();
-
-    // Cmd+Opt+I (macOS)
-    if (e.metaKey && e.altKey && k === "i") e.preventDefault();
-  });
- 
-</script>
-    
-</body></html>
+</body>
+</html>
