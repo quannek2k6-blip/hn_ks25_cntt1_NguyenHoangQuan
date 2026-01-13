@@ -1,0 +1,83 @@
+<html lang="vi"><head>
+        <meta charset="UTF-8">
+        <title>Giới thiệu đội ngũ bác sĩ nha khoa</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="vsc-initialized">
+        <h1>Đội Ngũ Bác Sĩ Nha Khoa</h1>
+
+        <div class="menu">
+            <a href="#">Trang chủ</a> | <a href="#">Giới thiệu</a> |
+            <a href="#">Bác sĩ</a> |
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- ẢNH MINH HỌA -->
+        <br>
+        <div class="banner">
+            <img src="https://www.docosan.com/blog/wp-content/uploads/2020/12/BLOG-cua-Haeo-3.jpg" alt="Đội ngũ bác sĩ nha khoa">
+        </div>
+
+        <!-- GIỚI THIỆU -->
+        <div class="section">
+            <h2>Giới thiệu</h2>
+            <p>
+                Phòng khám quy tụ đội ngũ bác sĩ nha khoa có chuyên môn cao,
+                nhiều năm kinh nghiệm và luôn tận tâm với bệnh nhân.
+            </p>
+        </div>
+
+        <!-- DANH SÁCH BÁC SĨ -->
+        <div class="section">
+            <h2>Đội ngũ bác sĩ</h2>
+            <ol>
+                <li>Bác sĩ Nguyễn Văn A – Răng Hàm Mặt</li>
+                <li>Bác sĩ Trần Thị B – Chỉnh nha</li>
+                <li>Bác sĩ Lê Văn C – Nha khoa trẻ em</li>
+            </ol>
+        </div>
+
+        <!-- UY TÍN -->
+        <div class="section">
+            <h2>Uy tín &amp; cam kết</h2>
+            <ul>
+                <li>Bác sĩ có chứng chỉ hành nghề</li>
+                <li>Thiết bị hiện đại</li>
+                <li>Hơn 10.000 khách hàng tin tưởng</li>
+            </ul>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>© 2026 Trung tâm Nha khoa uy tín</p>
+            <p>Hotline: 0900 111 222</p>
+        </div>
+                <script>
+  // Chặn menu chuột phải
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+  // Chặn chọn văn bản (không tuyệt đối)
+  document.addEventListener("selectstart", (e) => e.preventDefault());
+
+  // Chặn kéo thả
+  document.addEventListener("dragstart", (e) => e.preventDefault());
+  document.addEventListener("keydown", (e) => {
+    const k = e.key.toLowerCase();
+
+    // F12
+    if (e.key === "F12") e.preventDefault();
+
+    // Ctrl+Shift+I / J / C (Chrome/Edge)
+    if (e.ctrlKey && e.shiftKey && (k === "i" || k === "j" || k === "c"))
+      e.preventDefault();
+
+    // Ctrl+U (view source)
+    if (e.ctrlKey && k === "u") e.preventDefault();
+
+    // Cmd+Opt+I (macOS)
+    if (e.metaKey && e.altKey && k === "i") e.preventDefault();
+  });
+ 
+</script>
+    
+</body></html>
